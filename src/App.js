@@ -41,6 +41,25 @@ function App() {
       top: 2rem;
       left: 9rem;
     }
+    .ListItem {
+      min-width: 1.8rem;
+      margin-bottom: 0px;
+    }
+    .label {
+      right: 13rem;
+    }
+    .labeltext {
+      color: white;
+      span {
+        width: 8rem;
+      }
+    }
+    .label2 {
+      right: 23rem;
+    }
+    .Moin {
+      background-color: "red";
+    }
   `;
 
   return (

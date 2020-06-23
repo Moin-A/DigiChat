@@ -9,6 +9,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
 import Searchbar from "./Searchbar";
 import AvatarHor from "./AvatarHor";
+import Switch from "./Switch";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -38,11 +39,14 @@ export default function AlignItemsList() {
       >
         Pinned Chats
       </Typography>
+
       <AvatarHor />
+      <Switch />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
         </ListItemAvatar>
+
         <ListItemText
           primary="Brunch this weekend?"
           secondary={
@@ -60,6 +64,7 @@ export default function AlignItemsList() {
           }
         />
       </ListItem>
+
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
