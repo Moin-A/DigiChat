@@ -2,15 +2,18 @@ import React from "react";
 import logo from "./logo.svg";
 import Header from "./Header";
 import "./App.css";
+import { ThemeProvider } from "@material-ui/styles";
 import styled from "styled-components";
 import "./App.css";
 import Sidebar from "./Sidebar";
 import Chatlist from "./Chatlist";
-
+import { createMuiTheme } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 function App() {
   const Styleddiv = styled.div`
     grid-template-rows: 13vh 120vh 10vh;
     grid-gap: 2rem;
+    scrollbar-width: thin;
 
     .MuiDrawer-paperAnchorDockedLeft {
       top: 7rem;
@@ -21,18 +24,22 @@ function App() {
       /* color: "#4d7cff"; */
       background: #30376a;
       color: white;
+      scrollbar-width: thin;
     }
     .MuiListItem-button {
       display: grid;
       justify-content: center;
       text-align: center;
+      scrollbar-width: thin;
     }
     .MuiListItemIcon-alignItemsFlexStart {
       justify-content: center;
       color: white;
+      scrollbar-width: thin;
     }
     .MuiSvgIcon-root {
       font-size: 2rem;
+      scrollbar-width: thin;
     }
 
     /* //-----------------------// */
@@ -62,12 +69,36 @@ function App() {
     }
   `;
 
+  const theme = createMuiTheme({
+    overrides: {
+      MuiCssBaseline: {
+        "@global": {
+          "*::-webkit-scrollbar": {
+            width: "0.4em",
+            Color: "",
+            background: "#5980b01f",
+          },
+          "*::-webkit-scrollbar-track": {
+            "-webkit-box-shadow": "inset 0 0 6px rgba(0,0,0,0.00)",
+          },
+          "*::-webkit-scrollbar-thumb": {
+            backgroundColor: "#1754feb5",
+            outline: "1px solid slategrey",
+          },
+        },
+      },
+    },
+  });
+
   return (
-    <Styleddiv>
-      <Header />
-      <Sidebar style={{ position: "relative" }} />
-      <Chatlist />
-    </Styleddiv>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Styleddiv>
+        <Header />
+        <Sidebar style={{ position: "relative" }} />
+        <Chatlist />
+      </Styleddiv>
+    </ThemeProvider>
   );
 }
 

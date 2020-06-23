@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) =>
       maxwidth: "90%",
       fontSize: "17px",
       maxWidth: 40,
-      color: "",
+      
       position: "relative",
     },
   })
