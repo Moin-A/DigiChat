@@ -49,11 +49,6 @@ function App() {
 
     /* //-----------------------// */
 
-    .makeStyles-root-13 {
-      top: 2rem;
-      left: 9rem;
-      background: inherit;
-    }
     .ListItem {
       min-width: 1.8rem;
       margin-bottom: 0px;

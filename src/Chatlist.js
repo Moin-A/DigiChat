@@ -15,15 +15,18 @@ import Moin from "./VirtualisedListScroll";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      background: "inherit",
       color: "white",
       width: "60%",
+      top: "2rem",
+      left: "9rem",
       // maxWidth: "22rem",
       maxWidth: "45.7ch",
-      backgroundColor: theme.palette.background.paper,
+      backgroundColor: "inherit",
       position: "fixed",
       marginTop: "5rem",
       background: "#5980b01f",
-      borderRight: "0.2em solid #5980b01f",
+      borderRight: "0.1em solid #5980b01f",
       margin: "1.5em",
     },
     inline: {
