@@ -11,7 +11,7 @@ import VolumeMuteIcon from "@material-ui/icons/VolumeMute";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      width: "10%",
+      width: "0",
       height: 500,
       maxWidth: 210,
       backgroundColor: theme.palette.background.paper,
