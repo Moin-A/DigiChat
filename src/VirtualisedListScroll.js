@@ -57,7 +57,7 @@ function renderRow(props: ListChildComponentProps) {
         }
         secondary={` Meet me @ the park`}
       ></ListItemText>
-      3min
+      <span style={{ color: "white" }}>3min</span>
     </ListItem>
   );
 }

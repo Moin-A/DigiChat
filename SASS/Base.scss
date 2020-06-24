@@ -4,7 +4,7 @@ $color-grey-dark-2: rgb(26, 18, 19);
 $color-grey-dark-3: rgba(59, 10, 10, 0.445);
 $color-grey-light-1: rgba(233, 219, 219, 0);
 $bp-largest: 700px;
-$bp-smallest: 531;
+$bp-smallest: 516px;
 *::before,
 *::after {
   margin: 0;
@@ -17,10 +17,13 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; 
   @media only screen and(max-width:$bp-largest) {
-    font-size: 50%;
+    font-size: 67%;
+    .MuiAppBar-root { position: fixed}
+   
   }
-  @media only screen and(max-width:$bp-largest) {
-    font-size: 30%;
+  @media only screen and(max-width:$bp-smallest) {
+    font-size: 67%;
+ .makeStyles-root-13 {left: 4rem}
   }
  
 }

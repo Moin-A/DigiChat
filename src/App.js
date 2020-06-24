@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import Header from "./Header";
+import Divider from "@material-ui/core/Divider";
 import "./App.css";
 import { ThemeProvider } from "@material-ui/styles";
 import styled from "styled-components";
@@ -78,8 +79,10 @@ function App() {
       width: 5rem;
       .MuiTypography-displayBlock {
         display: flex;
+        color: white;
         svg {
-          font-size: 0.8rem;
+          font-size: 1rem;
+          color: #162065;
         }
       }
       .MuiBadge-badge {
@@ -124,7 +127,9 @@ function App() {
       <CssBaseline />
       <Styleddiv>
         <Header />
+
         <Sidebar style={{ position: "relative" }} />
+
         <Chatlist />
       </Styleddiv>
     </ThemeProvider>

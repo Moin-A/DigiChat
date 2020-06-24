@@ -12,6 +12,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import StarIcon from "@material-ui/icons/Star";
 import VideocamRoundedIcon from "@material-ui/icons/VideocamRounded";
 import PersonAddRoundedIcon from "@material-ui/icons/PersonAddRounded";
+import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,6 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       backgroundColor: "#2d3259",
       position: "sticky",
+      display: "grid",
       top: 0,
     },
     menuButton: {

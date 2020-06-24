@@ -15,12 +15,16 @@ import Moin from "./VirtualisedListScroll";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      color: "white",
       width: "60%",
-      maxWidth: "40ch",
+      // maxWidth: "22rem",
+      maxWidth: "45.7ch",
       backgroundColor: theme.palette.background.paper,
       position: "fixed",
       marginTop: "5rem",
       background: "#5980b01f",
+      borderRight: "0.2em solid #5980b01f",
+      margin: "1.5em",
     },
     inline: {
       display: "inline",
@@ -43,7 +47,6 @@ export default function AlignItemsList() {
       >
         Pinned Chats
       </Typography>
-
       <AvatarHor />
       <Switch />
       <Moin />

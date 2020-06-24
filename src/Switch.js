@@ -21,20 +21,20 @@ const IOSSwitch = withStyles((theme: Theme) =>
       padding: 1,
 
       "&$checked": {
-        marginTop: "1.3px",
+        marginTop: "0",
         backgroundColor: theme.palette.grey[12],
         transform: "translateX(108px)",
         color: theme.palette.common.blue,
         "& + $track": {
           opacity: 1,
-          border: "none",
+
           backgroundColor: "#2d3258",
         },
       },
       "&$focusVisible $thumb": {
         color: "#52d869",
 
-        border: "6px solid #fff",
+        border: "6px solid red",
       },
     },
     thumb: {
@@ -49,12 +49,12 @@ const IOSSwitch = withStyles((theme: Theme) =>
       },
     },
     track: {
-      borderRadius: 31 / 2,
-      border: `1px solid ${theme.palette.grey[400]}`,
+      borderRadius: 30 / 2,
+      border: `1px solid #222f6bfa`,
       backgroundColor: "#2d3258",
       color: "#4d7cff",
       opacity: 1,
-      transition: theme.transitions.create(["background-color", "border"]),
+      transition: theme.transitions.create(["background-color"]),
     },
     checked: {
       backgroundColor: "#4d7cff",
@@ -89,7 +89,7 @@ export default function CustomizedSwitches() {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
-  debugger;
+
   return (
     <FormGroup>
       <FormControlLabel

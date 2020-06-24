@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+
 import {
   createStyles,
   makeStyles,
@@ -87,6 +88,7 @@ export default function MiniDrawer() {
   return (
     <div className={classes.root}>
       <CssBaseline />
+
       <AppBar
         position="fixed"
         className={clsx(classes.appBar, {

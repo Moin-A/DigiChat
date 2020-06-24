@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
 
       "& > *": {
+        color: "white",
         margin: theme.spacing(-1, -2),
         justifyItems: "center",
         display: "grid",
@@ -51,7 +52,7 @@ export default function ImageAvatars() {
             src="https://panorbit.in/wp-content/uploads/2019/hotlink-ok/1001.jpeg"
           />
         </ListItemAvatar>
-        <ListItemText primary="Photos" />
+        <ListItemText primary="Photos" color="white" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>

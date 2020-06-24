@@ -9,10 +9,14 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 700px) {
     html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 700px) {
+      font-size: 67%; }
+      html .MuiAppBar-root {
+        position: fixed; } }
+  @media only screen and (max-width: 516px) {
     html {
-      font-size: 30%; } }
+      font-size: 67%; }
+      html .makeStyles-root-13 {
+        left: 4rem; } }
 
 body {
   font-weight: 300;
