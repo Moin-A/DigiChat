@@ -13,7 +13,11 @@ function App() {
   const Styleddiv = styled.div`
     grid-template-rows: 13vh 120vh 10vh;
     grid-gap: 2rem;
+    background: inherit;
     scrollbar-width: thin;
+    .makeStyles-root-33 {
+      width: 0;
+    }
 
     .MuiDrawer-paperAnchorDockedLeft {
       top: 7rem;
@@ -47,6 +51,7 @@ function App() {
     .makeStyles-root-13 {
       top: 2rem;
       left: 9rem;
+      background: inherit;
     }
     .ListItem {
       min-width: 1.8rem;
@@ -67,6 +72,27 @@ function App() {
     .Moin {
       background-color: "red";
     }
+
+    .VirtualisedListCard {
+      display: flex;
+      width: 5rem;
+      .MuiTypography-displayBlock {
+        display: flex;
+        svg {
+          font-size: 0.8rem;
+        }
+      }
+      .MuiBadge-badge {
+        left: 22px;
+        top: 4px;
+      }
+    }
+
+    .Avatar {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-right: 1rem;
+    }
   `;
 
   const theme = createMuiTheme({
@@ -77,6 +103,9 @@ function App() {
             width: "0.4em",
             Color: "",
             background: "#5980b01f",
+          },
+          html: {
+            background: "#2d3258e8",
           },
           "*::-webkit-scrollbar-track": {
             "-webkit-box-shadow": "inset 0 0 6px rgba(0,0,0,0.00)",

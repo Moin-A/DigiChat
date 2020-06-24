@@ -34,23 +34,41 @@ export default function CustomizedInputBase() {
   const classes = useStyles();
 
   return (
+    // <Paper
+    //   component="form"
+    //   className={classes.root}
+    //   style={{ height: "3rem", marginLeft: "0.7rem" }}
+    // >
+    //   <SearchIcon style={{ marginLeft: "1rem" }} />
+    //   <IconButton
+    //     type="submit"
+    //     className={classes.iconButton}
+    //     aria-label="search"
+    //   >
+    //     <InputBase
+    //       className={classes.input}
+    //       placeholder="Search"
+    //       inputProps={{ "aria-label": "search google maps" }}
+    //     />
+    //   </IconButton>
+    // </Paper>
     <Paper
       component="form"
       className={classes.root}
       style={{ height: "3rem", marginLeft: "0.7rem" }}
     >
-      <SearchIcon style={{ marginLeft: "1rem" }} />
+      <IconButton className={classes.iconButton} aria-label="menu"></IconButton>
+      <SearchIcon style={{ margin: "1rem" }} />
+      <InputBase
+        className={classes.input}
+        placeholder="Search Google Maps"
+        inputProps={{ "aria-label": "search google maps" }}
+      />
       <IconButton
         type="submit"
         className={classes.iconButton}
         aria-label="search"
-      >
-        <InputBase
-          className={classes.input}
-          placeholder="Search"
-          inputProps={{ "aria-label": "search google maps" }}
-        />
-      </IconButton>
+      ></IconButton>
     </Paper>
   );
 }
